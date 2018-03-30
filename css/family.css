@@ -1,0 +1,123 @@
+.family .banner{
+	height: 400px;
+	margin-top: 20px;
+}
+.family .slogan{
+	margin-top: 20px;
+	width: 100%;
+	height: auto;
+	background: url(../img/slogan.png)no-repeat center center;
+	background-size: 100% 100%;
+	padding: 30px 20px;
+}
+.family .more{
+	float: right;
+	width: 164px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 20px;
+	background: #3C4E99;
+	border-radius: 10px;
+	padding-right: 20px;
+}
+.family .more .icon{
+	display: inline-block;
+	float: right;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	margin-top: 9px;
+}
+.family .more p{
+	display: inline-block;
+	float: right;
+	color: #FFFFFF;
+	margin-right: 20px;
+}
+
+.family .list{
+	width: 100%;
+	margin-top: 20px;
+}
+.family .list li{
+	float: left;
+	width: 216px;
+	margin-right: 18px;
+	margin-bottom: 18px;
+	border: 1px solid #3C4E99;
+}
+.family .list li:nth-child(4n){
+	margin-right: 0;
+}
+.family .list li .pic{
+	width: 100%;
+	height: 145px;
+}
+.family .list li .name{
+	position: relative;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	background: #6B7BB9;
+	border-bottom-left-radius: 24px;
+}
+.family .list li .name .city{
+	position: absolute;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	bottom: 0;
+	width: 48px;
+	height: 48px;
+	color: #FFFFFF;
+	background: #777A00;
+	border-radius: 50%;
+}
+.family .list li .name .word{
+	text-indent: 60px;
+	color: #fff;
+	display: inline-block;
+}
+.family .list li .name .icon{
+	display: inline-block;
+	float: right;
+	width: 18px;
+	height: 18px;
+	margin-top: 3px;
+	margin-right: 10px;
+	font-size: 0;
+	animation: huxi 3s ease infinite 0s both;
+	-webkit-animation: huxi 3s ease infinite 0s both;
+}
+.family .list li .description{
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	color: #3C4E99;
+	border-bottom: 1px solid #3C4E99;
+	text-align: center;
+}
+.family .list li .support{
+	height: 24px;
+	line-height: 24px;
+	padding-right: 20px;
+}
+.family .list li .support .supportNum{
+	display: inline-block;
+	width: 20px;
+	float: right;
+	color: #3C4E99;
+	font-size: 12px;
+	font-weight: bold;
+}
+.family .list li .support .icon{
+	display: inline-block;
+	float: right;
+	width: 18px;
+	height: 18px;
+	font-size: 0;
+	margin-top: 3px;
+	margin-right: 5px;
+}

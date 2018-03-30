@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>范儿官网读者家分享征集</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="css/viewer.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fanerpc.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zsj.css"/>
+		<link rel="stylesheet" type="text/css" href="css/viewer.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/family.css"/>
+		<link rel="stylesheet" type="text/css" href="css/club.css"/>
+		<link rel="stylesheet" type="text/css" href="css/recruit.css"/>
+		<link rel="stylesheet" type="text/css" href="css/share.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="top-wrapper w100">
+			<div class="top w1200 clear">
+				<div class="logo"><a href="index.html">
+					<img src="img/logo.png"/></a>
+				</div>
+				<ul class="nav clear">
+					<li class="active"><a href="list.html"><span class="fanerpic"></span>期刊</a></li>
+					<li><a href="club.html">读者俱乐部</a></li>
+					<li><a href="editor.html">小编风采</a></li>
+					<li><a href="collect.html">我要上<span class="fanerpic"></span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--主体-->
+		<div class="main w1200 clear">
+			<div class="con2 w100 share clear">
+				<div class="goback">
+					<a href="javascript:history.go(-1);">
+						<span class="icon"><img src="img/white-arrowleft.png"/></span>
+						返回上一页
+					</a>
+				</div>
+				<div class="banner">
+					<a href="javascript:void(0);">
+					<img src="img/share-banner.jpg"/></a>
+				</div>
+				<div class="main">
+					<div class="slogan">
+						<p>在赛诺菲这个大家庭里，总是发生着一些令人骄傲、或感动、或捧腹的新鲜事，快用照片记录下这一切，并与我们分享吧！
+</p>
+					</div>
+				    <div class="sub-info">
+				    	<h3>个人报名 / For individual</h3>
+				    	<ul class="clear">
+				    		<li>
+				    			<div class="info-label">
+				    				*姓名 Name
+				    			</div>
+				    			<div class="info-input clear">
+				    				<input type="text" name="" id="" value="" />
+				    			</div>
+				    		</li>
+				    		<li>
+				    			<div class="info-label">
+				    				*所在城市 City
+				    			</div>
+				    			<div class="info-input clear">
+				    				<input type="text" name="" id="" value="" />
+				    			</div>
+				    		</li>
+				    		<li>
+				    			<div class="info-label">
+				    				*所属部门 Department
+				    			</div>
+				    			<div class="info-input clear">
+				    				<input type="text" name="" id="" value="" />
+				    			</div>
+				    		</li>
+				    		<li>
+				    			<div class="info-label">
+				    				*手机号 Photo Number
+				    			</div>
+				    			<div class="info-input clear">
+				    				<input type="text" name="" id="" value="" />
+				    			</div>
+				    		</li>
+				    		<li class="yx">
+				    			<div class="info-label">
+				    				*邮箱 E-mail
+				    			</div>
+				    			<div class="info-input clear">
+				    				<input type="text" name="" id="" value="" />
+				    			</div>
+				    		</li>
+				    	</ul>
+				    	<div class="cut-line"></div>
+				    	<div class="sub-photo">
+				    		<h3>照片上传<span>(照片需小于5M)</span></h3>
+				    		<div class="photo-box">
+				    			<input class="photo-btn" type="file" name="" id="chooseImage" value="" />
+				    		</div>
+				    		<div class="photo-showbox">
+				    			<img class="pic-show" id="cropedBigImg" />
+				    			<div class="close"><img src="img/close.png"/></div>
+				    		</div>
+				    		<div style="clear: both;"></div>
+				    		<div class="photo-notes">
+				    			<div class="info-label">
+				    				*照片注释 Remarks
+				    			</div>
+				    			<div class="info-input">
+				    				<input type="text" name="" id="" value="" />
+				    			</div>
+				    		</div>
+				    		
+				    	</div>
+				    	<button type="submit">
+				    		提交
+				    	</button>
+				    </div>
+				    
+				</div>
+				
+			</div>	
+		</div>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/viewer.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			$(function(){
+				$('#chooseImage').on('change',function(){  
+					$('.photo-showbox').show();
+			        var filePath = $(this).val(),         //获取到input的value，里面是文件的路径  
+			            fileFormat = filePath.substring(filePath.lastIndexOf(".")).toLowerCase(),  
+			            src = window.URL.createObjectURL(this.files[0]); //转成可以在本地预览的格式  
+			              
+			        // 检查是否是图片  
+			        if( !fileFormat.match(/.png|.jpg|.jpeg/) ) {  
+			            error_prompt_alert('上传错误,文件格式必须为：png/jpg/jpeg');  
+			            return;    
+			        }  
+			    
+			        src = window.URL.createObjectURL(this.files[0]);
+			        $('#cropedBigImg').attr('src',src);  
+			    });  
+			    
+			    
+			    $('.photo-showbox .close').click(function(){
+			    	$('.photo-showbox').hide();
+			    })
+			    
+			})
+			
+		
+		</script>
+	</body>
+</html>

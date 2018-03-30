@@ -1,0 +1,122 @@
+.wgs .banner{
+	margin-top: 5px;
+	height: 400px;
+	border: 1px solid #3C4E99;
+}
+.wgs .slogan{
+	margin-top: 20px;
+	width: 100%;
+	height: auto;
+	background: url(../img/slogan.png)no-repeat center center;
+	background-size: 100% 100%;
+	padding: 30px 20px;
+}
+.wgs .slogan h3{
+	color: #3C4E99;
+	font-weight: bold;
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.wgs .slogan span{
+	display: block;
+	text-align: right;
+}
+.wgs-list{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.wgs-list li{
+	float: left;
+	width: 450px;
+	height: 190px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url(../img/border-bg-p5.png)no-repeat center center;
+	background-size: 100% 100%;
+}
+.wgs-list li:nth-child(2n){
+	margin-right: 0;
+}
+.wgs-list li:after{
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.wgs-list li .pic{
+	float: left;
+	width: 250px;
+	height: 190px;
+}
+.wgs-list li .text{
+	float: right;
+	width: 200px;
+	overflow: hidden;
+}
+.wgs-list li .text .word{
+	width: 100%;
+	height: 150px;
+	padding-right: 10px;
+	overflow: hidden;
+}
+.wgs-list li .text .word h5{
+	color: #D4B275;
+	font-size: 18px;
+	margin-top: 44px;
+	margin-left: 15px;
+}
+.wgs-list li .text .word h3{
+	color: #4e549b;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 15px;
+}
+.wgs-list li .text .word p{
+	margin-left: 15px;
+	color: #3C4E99;
+	font-size: 12px;
+}
+.wgs-list li .text .line-link{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding-right: 20px;
+}
+.wgs-list li .text .line-link a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.wgs-list li .text .line-link a:hover{
+	cursor: pointer;
+}
+.wgs-list li .text .line-link .icon{
+	float: right;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	margin-top: 9px;
+	animation: huxi 3s ease infinite 0s both;
+	-webkit-animation: huxi 3s ease infinite 0s both;
+}
+.wgs-list li .text .line-link p{
+	display: inline-block;
+	float: right;
+	color: #FFFFFF;
+	margin-right: 20px;
+}
+.wgs-list li:nth-child(1) .text .line-link{
+	background: #3C4E99;
+}
+.wgs-list li:nth-child(2) .text .line-link{
+	background: #BFC400;
+}
+.wgs-list li:nth-child(3) .text .line-link{
+	background: #d4b275
+}
+.wgs-list li:nth-child(4) .text .line-link{
+	background: #6B7BB9;
+}

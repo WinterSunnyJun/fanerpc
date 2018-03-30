@@ -1,0 +1,190 @@
+.top-wrapper{
+	height: 99px;
+	background: url(../img/topbg.jpg)no-repeat center center;
+}
+.top .logo{
+	float: left;
+	width: 225px;
+	height: 52px;
+	margin-top: 23px;
+}
+.top .nav{
+	float: left;
+	height: 40px;
+	margin-top: 59px;
+}
+.top .nav li{
+	float: left;
+	height: 100%;
+	margin-left: 78px;
+}
+.top .nav li a{
+	letter-spacing: 2px;
+	display: block;
+	height: 100%;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 28px;
+	font-family: "微软雅黑";
+}
+.top .nav li.active a{
+	color: #BFC400;
+	border-bottom: 5px solid #bfc400;
+}
+.top .nav li .fanerpic{
+	display: inline-block;
+	width: 93px;
+	height: 28px;
+	vertical-align: middle;
+	background: url(../img/faner-pic.png)no-repeat center center;
+}
+.top .nav li.active .fanerpic{
+	background: url(../img/fanerpic-color.png)no-repeat center center;
+}
+.main{
+	margin-top: 30px;
+}
+.sidenav{
+	float: left;
+	width: 260px;
+	height: auto;
+	border-top: 5px solid #3c4e99;
+}
+.sidenav li{
+	width: 100%;
+	text-align: center;
+	height: 58px;
+	line-height: 58px;
+	margin: 7px auto;
+	background: #fff url(../img/arrow-arr.png)no-repeat 60px center;
+}
+.sidenav li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #3c4e99;
+	font-size: 18px;
+	font-weight: bold;
+}
+.sidenav li a:hover{
+	cursor: pointer;
+}
+.sidenav li.active,
+.sidenav li:hover{
+	background: #bfc400 url(../img/white-arrow.png)no-repeat 60px center;
+}
+.sidenav li.active a,
+.sidenav li:hover a{
+	color: #FFFFFF;
+}
+.con{
+	float: right;
+	width: 920px;
+}
+.con .goback{
+	width: 136px;
+	height: 26px;
+	background: #6b7bb9;
+	
+}
+.con .goback .icon{
+	float: left;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	font-size: 0;
+	margin: 3px 10px;
+}
+.con .goback a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	line-height: 26px;
+}
+.sub-banner{
+	position: relative;
+	margin-top: 5px;
+	width: 100%;
+	height: 140px;
+}
+.sub-banner .arrow{
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	bottom: 10px;
+	right: 20px;
+	animation: huxi 3s ease infinite 0s both;
+	-webkit-animation: huxi 3s ease infinite 0s both;
+}
+@keyframes huxi{
+	0%{
+		transform: scale(1.1);
+	}
+	50%{
+		transform: scale(0.8);
+	}
+	100%{
+		transform: scale(1.1);
+	}
+}
+.list-list{
+	margin-top: 12px;
+}
+.list-list li{
+	float: left;
+	width: 456px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+.list-list li:nth-child(2n){
+	margin-right: 0;
+}
+.list-list li .pic{
+	width: 100%;
+	height: 142px;
+}
+.list-list li .bg-line{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+.list-list li .bg-line a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.list-list li .bg-line a:hover{
+	cursor: pointer;
+}
+.list-list li .bg-line .arrow{
+	float: right;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	animation: huxi 3s ease infinite 0s both;
+	-webkit-animation: huxi 3s ease infinite 0s both;
+	margin: 9px 10px;
+	font-size: 0;
+}
+.list-list li .bg-line p{
+	display: inline-block;
+	float: right;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.list-list li:nth-child(1) .bg-line{
+	background: #6b7bb9;
+}
+.list-list li:nth-child(2) .bg-line{
+	background: #d4b275;
+}
+.list-list li:nth-child(3) .bg-line{
+	background: #bfc400;
+}
+.list-list li:nth-child(4) .bg-line{
+	background: #6b7bb9;
+}

@@ -1,0 +1,43 @@
+.collect-list{
+	width: 100%;
+	margin-top: 3px;
+}
+.collect-list li{
+	float: left;
+	width: 438px;
+	margin-right: 20px;
+}
+.collect-list li .pic{
+	width: 100%;
+	height: 322px;
+}
+.collect-list li .line-bg{
+	width: 100%;
+	height: 34px;
+	line-height:34px;
+	margin-top: 1px;
+	background: url(../img/line-bgbg.jpg)no-repeat center center;
+	background-size: 100%;
+	padding-right: 20px;
+}
+.collect-list li .line-bg a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.collect-list li .line-bg .icon{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	float: right;
+	margin-top: 7px;
+	font-size: 0;
+	animation: huxi 3s ease infinite 0s both;
+	-webkit-animation: huxi 3s ease infinite 0s both;
+}
+.collect-list li .line-bg p{
+	display: inline-block;
+	float: right;
+	color: #FFFFFF;
+	margin-right: 10px;
+}

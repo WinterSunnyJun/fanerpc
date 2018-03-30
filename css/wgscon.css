@@ -1,0 +1,50 @@
+.wgscon .banner{
+	margin-top: 20px;
+	height: 280px;
+}
+.wgscon .article{
+	margin-top: 20px;
+}
+.wgscon .article .title{
+	width: 100%;
+	padding-left: 300px;
+}
+.wgscon .article .title h3{
+	position: relative;
+	width: 280px;
+	height: 38px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 28px;
+	background: #6B7BB9;
+	text-indent: 12px;
+}
+.wgscon .article .title h3:after{
+	position: absolute;
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 38px solid transparent;
+	border-bottom: 38px solid #FFFFFF;
+	right: 0;
+	top: 0;
+}
+.wgscon .article .title h5{
+	height: 38px;
+	line-height: 38px;
+	font-size: 28px;
+	color: #3C4E99;
+	text-indent: 78px;
+}
+.wgscon .article .title p{
+	text-align: right;
+	font-weight: bold;
+	color: #4E549B;
+}
+.wgscon .article .con p{
+	color: #3C4E99;
+	text-indent: 32px;
+	margin-bottom: 20px;
+	line-height: 28px;
+}
